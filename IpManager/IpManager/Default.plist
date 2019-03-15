@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>defaultArray</key>
+	<array>
+		<dict>
+			<key>isSelected</key>
+			<false/>
+			<key>host</key>
+			<string>8888</string>
+			<key>ip</key>
+			<string>192.168.1.235</string>
+			<key>name</key>
+			<string>陈沥的内网服务器</string>
+		</dict>
+        <dict>
+            <key>isSelected</key>
+            <false/>
+            <key>host</key>
+            <string>2027</string>
+            <key>ip</key>
+            <string>192.168.28.235</string>
+            <key>name</key>
+            <string>老柏的内网服务器</string>
+        </dict>
+        <dict>
+            <key>isSelected</key>
+            <false/>
+            <key>host</key>
+            <string>8888</string>
+            <key>ip</key>
+            <string>192.168.1.235</string>
+            <key>name</key>
+            <string>曾世平的内网服务器</string>
+        </dict>
+        <dict>
+            <key>isSelected</key>
+            <false/>
+            <key>host</key>
+            <string>2027</string>
+            <key>ip</key>
+            <string>59.36.149.135</string>
+            <key>name</key>
+            <string>外网服务器</string>
+        </dict>
+	</array>
+</dict>
+</plist>

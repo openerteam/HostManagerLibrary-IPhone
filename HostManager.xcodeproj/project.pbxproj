@@ -140,51 +140,10 @@
 		71FAD96B223F27B90081E9B3 /* HostManager */ = {
 			isa = PBXGroup;
 			children = (
-				71FAD996223F2D120081E9B3 /* resources */,
-				71FAD97B223F28DB0081E9B3 /* controller */,
-				71FAD978223F28DB0081E9B3 /* model */,
-				71FAD973223F28DB0081E9B3 /* view */,
-				71FAD96D223F27D70081E9B3 /* Ping */,
-				71FAD970223F28140081E9B3 /* HostManagerHelper.h */,
-				71FAD971223F28140081E9B3 /* HostManagerHelper.m */,
-			);
-			path = HostManager;
-			sourceTree = "<group>";
-		};
-		71FAD96D223F27D70081E9B3 /* Ping */ = {
-			isa = PBXGroup;
-			children = (
-				71FAD98F223F28F70081E9B3 /* SimplePing.h */,
-				71FAD990223F28F70081E9B3 /* SimplePing.m */,
-				71FAD98E223F28F70081E9B3 /* WHPingTester.h */,
-				71FAD991223F28F80081E9B3 /* WHPingTester.m */,
-			);
-			path = Ping;
-			sourceTree = "<group>";
-		};
-		71FAD973223F28DB0081E9B3 /* view */ = {
-			isa = PBXGroup;
-			children = (
 				71FAD974223F28DB0081E9B3 /* IpHostCell.m */,
 				71FAD975223F28DB0081E9B3 /* PhoneDetailCell.m */,
 				71FAD976223F28DB0081E9B3 /* PhoneDetailCell.h */,
 				71FAD977223F28DB0081E9B3 /* IpHostCell.h */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		71FAD978223F28DB0081E9B3 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				71380016223F3DF900B49E48 /* AddressModel.h */,
-				71380017223F3DF900B49E48 /* AddressModel.m */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		71FAD97B223F28DB0081E9B3 /* controller */ = {
-			isa = PBXGroup;
-			children = (
 				71FAD97C223F28DB0081E9B3 /* AddDomainViewController.m */,
 				71FAD97D223F28DB0081E9B3 /* PhoneDetailViewController.m */,
 				71FAD97E223F28DB0081E9B3 /* AddIpViewController.h */,
@@ -195,8 +154,17 @@
 				71FAD983223F28DB0081E9B3 /* AddViewController.m */,
 				71FAD984223F28DB0081E9B3 /* AddIpViewController.m */,
 				71FAD985223F28DB0081E9B3 /* IpHomeViewController.h */,
+				71FAD970223F28140081E9B3 /* HostManagerHelper.h */,
+				71FAD971223F28140081E9B3 /* HostManagerHelper.m */,
+				71380016223F3DF900B49E48 /* AddressModel.h */,
+				71380017223F3DF900B49E48 /* AddressModel.m */,
+				71FAD98F223F28F70081E9B3 /* SimplePing.h */,
+				71FAD990223F28F70081E9B3 /* SimplePing.m */,
+				71FAD98E223F28F70081E9B3 /* WHPingTester.h */,
+				71FAD991223F28F80081E9B3 /* WHPingTester.m */,
+				71FAD996223F2D120081E9B3 /* resources */,
 			);
-			path = controller;
+			path = HostManager;
 			sourceTree = "<group>";
 		};
 		71FAD996223F2D120081E9B3 /* resources */ = {

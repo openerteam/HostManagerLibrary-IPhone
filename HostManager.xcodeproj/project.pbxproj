@@ -24,7 +24,22 @@
 		71FAD98D223F28DB0081E9B3 /* AddIpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD984223F28DB0081E9B3 /* AddIpViewController.m */; };
 		71FAD992223F28F80081E9B3 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD990223F28F70081E9B3 /* SimplePing.m */; };
 		71FAD993223F28F80081E9B3 /* WHPingTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD991223F28F80081E9B3 /* WHPingTester.m */; };
-		71FAD995223F29DB0081E9B3 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD994223F29DB0081E9B3 /* Image.xcassets */; };
+		71FAD9A7223F2E010081E9B3 /* ip_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD997223F2E000081E9B3 /* ip_add@2x.png */; };
+		71FAD9A8223F2E010081E9B3 /* ip_选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD998223F2E000081E9B3 /* ip_选中@3x.png */; };
+		71FAD9A9223F2E010081E9B3 /* ip_选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD999223F2E000081E9B3 /* ip_选中@2x.png */; };
+		71FAD9AA223F2E010081E9B3 /* ip_change@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD99A223F2E000081E9B3 /* ip_change@2x.png */; };
+		71FAD9AB223F2E010081E9B3 /* ip_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD99B223F2E000081E9B3 /* ip_add@3x.png */; };
+		71FAD9AC223F2E010081E9B3 /* ip_可用@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD99C223F2E000081E9B3 /* ip_可用@3x.png */; };
+		71FAD9AD223F2E010081E9B3 /* ip_禁用@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD99D223F2E000081E9B3 /* ip_禁用@2x.png */; };
+		71FAD9AE223F2E010081E9B3 /* ip_下一步@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD99E223F2E000081E9B3 /* ip_下一步@2x.png */; };
+		71FAD9AF223F2E010081E9B3 /* ip_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD99F223F2E000081E9B3 /* ip_back@2x.png */; };
+		71FAD9B0223F2E010081E9B3 /* ip_可用@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD9A0223F2E010081E9B3 /* ip_可用@2x.png */; };
+		71FAD9B1223F2E010081E9B3 /* ip_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD9A1223F2E010081E9B3 /* ip_back@3x.png */; };
+		71FAD9B2223F2E010081E9B3 /* ip_退出@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD9A2223F2E010081E9B3 /* ip_退出@3x.png */; };
+		71FAD9B3223F2E010081E9B3 /* ip_禁用@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD9A3223F2E010081E9B3 /* ip_禁用@3x.png */; };
+		71FAD9B4223F2E010081E9B3 /* ip_下一步@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD9A4223F2E010081E9B3 /* ip_下一步@3x.png */; };
+		71FAD9B5223F2E010081E9B3 /* ip_change@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD9A5223F2E010081E9B3 /* ip_change@3x.png */; };
+		71FAD9B6223F2E010081E9B3 /* ip_退出@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD9A6223F2E010081E9B3 /* ip_退出@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +75,22 @@
 		71FAD98F223F28F70081E9B3 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
 		71FAD990223F28F70081E9B3 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 		71FAD991223F28F80081E9B3 /* WHPingTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHPingTester.m; sourceTree = "<group>"; };
-		71FAD994223F29DB0081E9B3 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		71FAD997223F2E000081E9B3 /* ip_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_add@2x.png"; sourceTree = "<group>"; };
+		71FAD998223F2E000081E9B3 /* ip_选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_选中@3x.png"; sourceTree = "<group>"; };
+		71FAD999223F2E000081E9B3 /* ip_选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_选中@2x.png"; sourceTree = "<group>"; };
+		71FAD99A223F2E000081E9B3 /* ip_change@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_change@2x.png"; sourceTree = "<group>"; };
+		71FAD99B223F2E000081E9B3 /* ip_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_add@3x.png"; sourceTree = "<group>"; };
+		71FAD99C223F2E000081E9B3 /* ip_可用@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_可用@3x.png"; sourceTree = "<group>"; };
+		71FAD99D223F2E000081E9B3 /* ip_禁用@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_禁用@2x.png"; sourceTree = "<group>"; };
+		71FAD99E223F2E000081E9B3 /* ip_下一步@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_下一步@2x.png"; sourceTree = "<group>"; };
+		71FAD99F223F2E000081E9B3 /* ip_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_back@2x.png"; sourceTree = "<group>"; };
+		71FAD9A0223F2E010081E9B3 /* ip_可用@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_可用@2x.png"; sourceTree = "<group>"; };
+		71FAD9A1223F2E010081E9B3 /* ip_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_back@3x.png"; sourceTree = "<group>"; };
+		71FAD9A2223F2E010081E9B3 /* ip_退出@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_退出@3x.png"; sourceTree = "<group>"; };
+		71FAD9A3223F2E010081E9B3 /* ip_禁用@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_禁用@3x.png"; sourceTree = "<group>"; };
+		71FAD9A4223F2E010081E9B3 /* ip_下一步@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_下一步@3x.png"; sourceTree = "<group>"; };
+		71FAD9A5223F2E010081E9B3 /* ip_change@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_change@3x.png"; sourceTree = "<group>"; };
+		71FAD9A6223F2E010081E9B3 /* ip_退出@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ip_退出@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +140,7 @@
 		71FAD96B223F27B90081E9B3 /* HostManager */ = {
 			isa = PBXGroup;
 			children = (
-				71FAD994223F29DB0081E9B3 /* Image.xcassets */,
+				71FAD996223F2D120081E9B3 /* resources */,
 				71FAD97B223F28DB0081E9B3 /* controller */,
 				71FAD978223F28DB0081E9B3 /* model */,
 				71FAD973223F28DB0081E9B3 /* view */,
@@ -167,6 +197,29 @@
 				71FAD985223F28DB0081E9B3 /* IpHomeViewController.h */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		71FAD996223F2D120081E9B3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				71FAD99D223F2E000081E9B3 /* ip_禁用@2x.png */,
+				71FAD9A3223F2E010081E9B3 /* ip_禁用@3x.png */,
+				71FAD9A0223F2E010081E9B3 /* ip_可用@2x.png */,
+				71FAD99C223F2E000081E9B3 /* ip_可用@3x.png */,
+				71FAD9A6223F2E010081E9B3 /* ip_退出@2x.png */,
+				71FAD9A2223F2E010081E9B3 /* ip_退出@3x.png */,
+				71FAD99E223F2E000081E9B3 /* ip_下一步@2x.png */,
+				71FAD9A4223F2E010081E9B3 /* ip_下一步@3x.png */,
+				71FAD999223F2E000081E9B3 /* ip_选中@2x.png */,
+				71FAD998223F2E000081E9B3 /* ip_选中@3x.png */,
+				71FAD997223F2E000081E9B3 /* ip_add@2x.png */,
+				71FAD99B223F2E000081E9B3 /* ip_add@3x.png */,
+				71FAD99F223F2E000081E9B3 /* ip_back@2x.png */,
+				71FAD9A1223F2E010081E9B3 /* ip_back@3x.png */,
+				71FAD99A223F2E000081E9B3 /* ip_change@2x.png */,
+				71FAD9A5223F2E010081E9B3 /* ip_change@3x.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,10 +279,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71FAD9AC223F2E010081E9B3 /* ip_可用@3x.png in Resources */,
+				71FAD9B4223F2E010081E9B3 /* ip_下一步@3x.png in Resources */,
 				71FAD962223F27240081E9B3 /* LaunchScreen.storyboard in Resources */,
+				71FAD9AD223F2E010081E9B3 /* ip_禁用@2x.png in Resources */,
+				71FAD9B6223F2E010081E9B3 /* ip_退出@2x.png in Resources */,
+				71FAD9B2223F2E010081E9B3 /* ip_退出@3x.png in Resources */,
+				71FAD9AE223F2E010081E9B3 /* ip_下一步@2x.png in Resources */,
+				71FAD9B5223F2E010081E9B3 /* ip_change@3x.png in Resources */,
 				71FAD95F223F27240081E9B3 /* Assets.xcassets in Resources */,
-				71FAD995223F29DB0081E9B3 /* Image.xcassets in Resources */,
+				71FAD9B0223F2E010081E9B3 /* ip_可用@2x.png in Resources */,
 				71FAD95D223F27230081E9B3 /* Main.storyboard in Resources */,
+				71FAD9AA223F2E010081E9B3 /* ip_change@2x.png in Resources */,
+				71FAD9AB223F2E010081E9B3 /* ip_add@3x.png in Resources */,
+				71FAD9AF223F2E010081E9B3 /* ip_back@2x.png in Resources */,
+				71FAD9B3223F2E010081E9B3 /* ip_禁用@3x.png in Resources */,
+				71FAD9A9223F2E010081E9B3 /* ip_选中@2x.png in Resources */,
+				71FAD9B1223F2E010081E9B3 /* ip_back@3x.png in Resources */,
+				71FAD9A8223F2E010081E9B3 /* ip_选中@3x.png in Resources */,
+				71FAD9A7223F2E010081E9B3 /* ip_add@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718FEEBE223F36FD005F9633 /* AddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 718FEEBD223F36FD005F9633 /* AddressModel.m */; };
 		71FAD957223F27230081E9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD956223F27230081E9B3 /* AppDelegate.m */; };
 		71FAD95A223F27230081E9B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD959223F27230081E9B3 /* ViewController.m */; };
 		71FAD95D223F27230081E9B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD95B223F27230081E9B3 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		71FAD972223F28140081E9B3 /* HostManagerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD971223F28140081E9B3 /* HostManagerHelper.m */; };
 		71FAD986223F28DB0081E9B3 /* IpHostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD974223F28DB0081E9B3 /* IpHostCell.m */; };
 		71FAD987223F28DB0081E9B3 /* PhoneDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD975223F28DB0081E9B3 /* PhoneDetailCell.m */; };
-		71FAD988223F28DB0081E9B3 /* IpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD97A223F28DB0081E9B3 /* IpModel.m */; };
 		71FAD989223F28DB0081E9B3 /* AddDomainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD97C223F28DB0081E9B3 /* AddDomainViewController.m */; };
 		71FAD98A223F28DB0081E9B3 /* PhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD97D223F28DB0081E9B3 /* PhoneDetailViewController.m */; };
 		71FAD98B223F28DB0081E9B3 /* IpHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD980223F28DB0081E9B3 /* IpHomeViewController.m */; };
@@ -43,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		718FEEBC223F36FD005F9633 /* AddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressModel.h; sourceTree = "<group>"; };
+		718FEEBD223F36FD005F9633 /* AddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressModel.m; sourceTree = "<group>"; };
 		71FAD952223F27220081E9B3 /* HostManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FAD955223F27230081E9B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71FAD956223F27230081E9B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,8 +61,6 @@
 		71FAD975223F28DB0081E9B3 /* PhoneDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneDetailCell.m; sourceTree = "<group>"; };
 		71FAD976223F28DB0081E9B3 /* PhoneDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneDetailCell.h; sourceTree = "<group>"; };
 		71FAD977223F28DB0081E9B3 /* IpHostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpHostCell.h; sourceTree = "<group>"; };
-		71FAD979223F28DB0081E9B3 /* IpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpModel.h; sourceTree = "<group>"; };
-		71FAD97A223F28DB0081E9B3 /* IpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpModel.m; sourceTree = "<group>"; };
 		71FAD97C223F28DB0081E9B3 /* AddDomainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDomainViewController.m; sourceTree = "<group>"; };
 		71FAD97D223F28DB0081E9B3 /* PhoneDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneDetailViewController.m; sourceTree = "<group>"; };
 		71FAD97E223F28DB0081E9B3 /* AddIpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddIpViewController.h; sourceTree = "<group>"; };
@@ -176,8 +176,8 @@
 		71FAD978223F28DB0081E9B3 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				71FAD979223F28DB0081E9B3 /* IpModel.h */,
-				71FAD97A223F28DB0081E9B3 /* IpModel.m */,
+				718FEEBC223F36FD005F9633 /* AddressModel.h */,
+				718FEEBD223F36FD005F9633 /* AddressModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -309,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FAD98B223F28DB0081E9B3 /* IpHomeViewController.m in Sources */,
-				71FAD988223F28DB0081E9B3 /* IpModel.m in Sources */,
 				71FAD98C223F28DB0081E9B3 /* AddViewController.m in Sources */,
 				71FAD95A223F27230081E9B3 /* ViewController.m in Sources */,
 				71FAD987223F28DB0081E9B3 /* PhoneDetailCell.m in Sources */,
@@ -318,6 +317,7 @@
 				71FAD986223F28DB0081E9B3 /* IpHostCell.m in Sources */,
 				71FAD957223F27230081E9B3 /* AppDelegate.m in Sources */,
 				71FAD98D223F28DB0081E9B3 /* AddIpViewController.m in Sources */,
+				718FEEBE223F36FD005F9633 /* AddressModel.m in Sources */,
 				71FAD992223F28F80081E9B3 /* SimplePing.m in Sources */,
 				71FAD98A223F28DB0081E9B3 /* PhoneDetailViewController.m in Sources */,
 				71FAD972223F28140081E9B3 /* HostManagerHelper.m in Sources */,

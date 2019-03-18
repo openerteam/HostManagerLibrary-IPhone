@@ -1,14 +1,14 @@
 //
-//  IpModel.m
-//  IpManager
+//  AddressModel.m
+//  HostManager
 //
-//  Created by North on 2019/3/13.
+//  Created by North on 2019/3/18.
 //  Copyright © 2019 North. All rights reserved.
 //
 
-#import "IpModel.h"
+#import "AddressModel.h"
 
-@implementation IpModel
+@implementation AddressModel
 
 - (instancetype)initWithName:(NSString *)name ip:(NSString *)ip host:(NSString *)host{
     
@@ -59,7 +59,7 @@
             [self.pingTester startPing];
             
         }
-  
+        
     }
     
     return self;
@@ -84,6 +84,5 @@
     if(self.pingBclok)self.pingBclok(self.result);
     
 }
-
 
 @end

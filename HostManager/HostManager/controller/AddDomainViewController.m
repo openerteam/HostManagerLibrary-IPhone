@@ -8,7 +8,7 @@
 
 #import "AddDomainViewController.h"
 #import "HostManagerHelper.h"
-#import "IpModel.h"
+#import "AddressModel.h"
 
 @interface AddDomainViewController ()<UITextFieldDelegate>
 
@@ -152,7 +152,7 @@
     
     [self.view endEditing:YES];
     
-    IpModel *model = [[IpModel alloc] initWithName:self.nameTextFiled.text.length>0?self.nameTextFiled.text:@"未命名服务器" ip:self.domainTextFiled.text host:self.hostTextFiled.text];
+    AddressModel *model = [[AddressModel alloc] initWithName:self.nameTextFiled.text.length>0?self.nameTextFiled.text:@"未命名服务器" ip:self.domainTextFiled.text host:self.hostTextFiled.text];
    
     
     [[HostManagerHelper shareHeler] saveNewItem:model];

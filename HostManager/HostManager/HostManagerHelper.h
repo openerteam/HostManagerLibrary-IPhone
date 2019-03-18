@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "IpModel.h"
+#import "AddressModel.h"
 
 #define CURRENTADDRESS [[HostManagerHelper shareHeler] currentAddress]
 
@@ -17,7 +17,7 @@
 #define KCurrentAddressChangeNotice  @"CurrentAddressChangeNotice" //当前ip改变通知
 #define KNewAddressNotice            @"NewAddressNotice"      //新增ip通知
 
-typedef NSMutableArray<IpModel *> * (^ReulstBlock)(void);
+typedef NSMutableArray<AddressModel *> * (^ReulstBlock)(void);
 
 
 @interface HostManagerHelper : NSObject
@@ -29,17 +29,17 @@ typedef NSMutableArray<IpModel *> * (^ReulstBlock)(void);
 
 - (NSString *)currentAddress;
 
-- (IpModel *)currentItem;
+- (AddressModel *)currentItem;
 
 - (NSArray *)readSaveIpArray;
 
 - (NSString *)savePath;
 
-- (void)saveNewItem:(IpModel *)item;
+- (void)saveNewItem:(AddressModel *)item;
 
-- (void)deleteItem:(IpModel *)item;
+- (void)deleteItem:(AddressModel *)item;
 
-- (void)changeCurrentAddress:(IpModel *)item;
+- (void)changeCurrentAddress:(AddressModel *)item;
 
 - (void)showManagerController;
 

@@ -8,7 +8,7 @@
 
 #import "AddIpViewController.h"
 #import "HostManagerHelper.h"
-#import "IpModel.h"
+#import "AddressModel.h"
 @interface AddIpViewController ()<UITextFieldDelegate>
 
 @property (retain ,nonatomic) UILabel *tipLabel;
@@ -222,7 +222,7 @@
     NSString *ip = [NSString stringWithFormat:@"%@.%@.%@.%@:%@",self.inputTextFiled1.text,self.inputTextFiled2.text,self.inputTextFiled3.text,self.inputTextFiled4.text,self.hostTextFiled.text];
     
     
-    IpModel *model = [[IpModel alloc] initWithName:self.nameTextFiled.text.length>0?self.nameTextFiled.text:@"未命名服务器" ip:ip host:self.hostTextFiled.text];
+    AddressModel *model = [[AddressModel alloc] initWithName:self.nameTextFiled.text.length>0?self.nameTextFiled.text:@"未命名服务器" ip:ip host:self.hostTextFiled.text];
     
     [[HostManagerHelper shareHeler] saveNewItem:model];
     

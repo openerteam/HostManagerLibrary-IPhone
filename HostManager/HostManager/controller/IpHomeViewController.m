@@ -159,7 +159,7 @@
 
 - (void)currentAddressChangeNotice{
     
-    IpModel *model = [HostManagerHelper shareHeler].currentItem;
+    AddressModel *model = [HostManagerHelper shareHeler].currentItem;
     
     if(model){
         
@@ -232,7 +232,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    IpModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
+    AddressModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
     [[HostManagerHelper shareHeler] changeCurrentAddress:item];
     [tableView reloadData];
     [self exitBtnAction];
@@ -240,7 +240,7 @@
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     //第二组可以左滑删除
-    IpModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
+    AddressModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
     return !item.isSelected;
 }
 
@@ -251,7 +251,7 @@
 
 // 进入编辑模式，按下出现的编辑按钮后,进行删除操作
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    IpModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
+    AddressModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
     [[HostManagerHelper shareHeler] deleteItem:item];
     
     [tableView beginUpdates];

@@ -59,7 +59,7 @@
     [self.contentView addSubview:lineView];
     
 }
-- (void)setIpData:(IpModel *)item{
+- (void)setIpData:(AddressModel *)item{
     
     nameLabel.text = item.name;
     if(item.host.length>0)

@@ -14,7 +14,7 @@
     
     
     NSMutableArray *ipArray;
-    IpModel *currentItem;
+    AddressModel *currentItem;
 }
 @end
 
@@ -40,7 +40,7 @@
         
         ipArray = @[].mutableCopy;
         for (NSDictionary *dic in array) {
-            IpModel *model = [[ IpModel alloc]initWithDictionary:dic];
+            AddressModel *model = [[AddressModel alloc]initWithDictionary:dic];
             if(model.isSelected) currentItem = model;
             [ipArray addObject:model];
         }
@@ -53,7 +53,7 @@
         
         ipArray = reulstBlock();
         
-        for (IpModel *model in ipArray) {
+        for (AddressModel *model in ipArray) {
             
             if(model.isSelected) currentItem = model;
             break;
@@ -72,7 +72,7 @@
     return nil;
 }
 
-- (IpModel *)currentItem{
+- (AddressModel *)currentItem{
     
     return currentItem;
 }
@@ -97,7 +97,7 @@
     return [[NSMutableArray alloc] initWithContentsOfFile:path];
 }
 
-- (void)saveNewItem:(IpModel *)item{
+- (void)saveNewItem:(AddressModel *)item{
     
     //保存
     [ipArray addObject:item];
@@ -106,7 +106,7 @@
     
 }
 
-- (void)deleteItem:(IpModel *)item{
+- (void)deleteItem:(AddressModel *)item{
     
     if([ipArray containsObject:item]){
         
@@ -116,10 +116,10 @@
     [self saveIpArray];
 }
 
-- (void)changeCurrentAddress:(IpModel *)item{
+- (void)changeCurrentAddress:(AddressModel *)item{
     
     
-    for (IpModel *model in ipArray) {
+    for (AddressModel *model in ipArray) {
         model.isSelected = NO;
     }
     
@@ -133,7 +133,7 @@
     
     NSMutableArray *array = @[].mutableCopy;
     
-    for (IpModel *item in ipArray) {
+    for (AddressModel *item in ipArray) {
         [array addObject:[item transformDictionary]];
     }
     [array writeToFile:[self savePath] atomically:YES];

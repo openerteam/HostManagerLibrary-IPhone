@@ -22,11 +22,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    [[HostManagerHelper shareHeler] setDefalutAddress:^NSMutableArray<IpModel *> *{
+    [[HostManagerHelper shareHeler] setDefalutAddress:^NSMutableArray<AddressModel *> *{
         
         NSMutableArray *array = @[].mutableCopy;
         {
-            IpModel *model = [[IpModel alloc] initWithName:@"百度" ip:@"www.baidu.com" host:nil];
+            AddressModel *model = [[AddressModel alloc] initWithName:@"百度" ip:@"www.baidu.com" host:nil];
             model.isSelected = YES;
             [array addObject:model];
             

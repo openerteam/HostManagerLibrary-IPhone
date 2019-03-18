@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "IpModel.h"
+#import "AddressModel.h"
 
 @interface IpHostCell : UITableViewCell
 
-- (void)setIpData:(IpModel *)item;
+- (void)setIpData:(AddressModel *)item;
 
 
 @end

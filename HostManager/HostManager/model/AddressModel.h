@@ -1,8 +1,8 @@
 //
-//  IpModel.h
-//  IpManager
+//  AddressModel.h
+//  HostManager
 //
-//  Created by North on 2019/3/13.
+//  Created by North on 2019/3/18.
 //  Copyright © 2019 North. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 #import "WHPingTester.h"
 
 typedef void(^PingResult)(BOOL result);
-
-@interface IpModel : NSObject<WHPingDelegate>
-
+@interface AddressModel : NSObject<WHPingDelegate>
 @property(retain ,nonatomic) NSString *name;
 @property(retain ,nonatomic) NSString *ip;
 @property(retain ,nonatomic) NSString *host;
@@ -25,17 +23,11 @@ typedef void(^PingResult)(BOOL result);
 @property(assign ,nonatomic) BOOL didPing;
 @property (copy ,nonatomic) PingResult pingBclok;
 
-
-- (instancetype)init; NS_DEPRECATED_IOS(2_0,3_0);
-
 - (instancetype)initWithName:(NSString *)name ip:(NSString *)ip host:(NSString *)host;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dic;
 
 - (NSDictionary *)transformDictionary;
-
-
-
 @end
 
 

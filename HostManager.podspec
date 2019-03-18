@@ -118,7 +118,7 @@ s.source       = { :git => "https://github.com/openerteam/HostManagerLibrary-IPh
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "Foundation","UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

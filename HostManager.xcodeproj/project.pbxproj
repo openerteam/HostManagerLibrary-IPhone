@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		718FEEBE223F36FD005F9633 /* AddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 718FEEBD223F36FD005F9633 /* AddressModel.m */; };
+		71380018223F3DF900B49E48 /* AddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71380017223F3DF900B49E48 /* AddressModel.m */; };
 		71FAD957223F27230081E9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD956223F27230081E9B3 /* AppDelegate.m */; };
 		71FAD95A223F27230081E9B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD959223F27230081E9B3 /* ViewController.m */; };
 		71FAD95D223F27230081E9B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FAD95B223F27230081E9B3 /* Main.storyboard */; };
@@ -43,8 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		718FEEBC223F36FD005F9633 /* AddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressModel.h; sourceTree = "<group>"; };
-		718FEEBD223F36FD005F9633 /* AddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressModel.m; sourceTree = "<group>"; };
+		71380016223F3DF900B49E48 /* AddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressModel.h; sourceTree = "<group>"; };
+		71380017223F3DF900B49E48 /* AddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressModel.m; sourceTree = "<group>"; };
 		71FAD952223F27220081E9B3 /* HostManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FAD955223F27230081E9B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71FAD956223F27230081E9B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -176,8 +176,8 @@
 		71FAD978223F28DB0081E9B3 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				718FEEBC223F36FD005F9633 /* AddressModel.h */,
-				718FEEBD223F36FD005F9633 /* AddressModel.m */,
+				71380016223F3DF900B49E48 /* AddressModel.h */,
+				71380017223F3DF900B49E48 /* AddressModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -314,10 +314,10 @@
 				71FAD987223F28DB0081E9B3 /* PhoneDetailCell.m in Sources */,
 				71FAD965223F27240081E9B3 /* main.m in Sources */,
 				71FAD989223F28DB0081E9B3 /* AddDomainViewController.m in Sources */,
+				71380018223F3DF900B49E48 /* AddressModel.m in Sources */,
 				71FAD986223F28DB0081E9B3 /* IpHostCell.m in Sources */,
 				71FAD957223F27230081E9B3 /* AppDelegate.m in Sources */,
 				71FAD98D223F28DB0081E9B3 /* AddIpViewController.m in Sources */,
-				718FEEBE223F36FD005F9633 /* AddressModel.m in Sources */,
 				71FAD992223F28F80081E9B3 /* SimplePing.m in Sources */,
 				71FAD98A223F28DB0081E9B3 /* PhoneDetailViewController.m in Sources */,
 				71FAD972223F28140081E9B3 /* HostManagerHelper.m in Sources */,

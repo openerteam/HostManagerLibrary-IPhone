@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint MKPage.podspec' to ensure this is a
+#  Be sure to run `pod spec lint HostManager.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-  						     一个可以修改网络连接地址的工具类
+ s.description  = <<-DESC
+                   一个可以修改网络连接地址的工具类
                    DESC
 
   s.homepage     = "https://github.com/openerteam/HostManagerLibrary-IPhone"
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "8.0"
+  # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/openerteam/HostManagerLibrary-IPhone.git", :tag =>s.version.to_s }
+s.source       = { :git => "https://github.com/openerteam/HostManagerLibrary-IPhone.git", :tag =>s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

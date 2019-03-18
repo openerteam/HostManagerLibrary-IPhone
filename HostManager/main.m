@@ -1,8 +1,8 @@
 //
 //  main.m
-//  IpManager
+//  HostManager
 //
-//  Created by North on 2019/3/12.
+//  Created by North on 2019/3/18.
 //  Copyright © 2019 North. All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
-//  IpManagerHelper.h
-//  IpManager
+//  HostManagerHelper.h
+//  HostManager
 //
-//  Created by North on 2019/3/12.
+//  Created by North on 2019/3/18.
 //  Copyright © 2019 North. All rights reserved.
 //
 
@@ -10,20 +10,18 @@
 #import <UIKit/UIKit.h>
 #import "IpModel.h"
 
-
-#define IPADDRESS [IpManagerHelper shareHeler].currentAddress
+#define CURRENTADDRESS [[HostManagerHelper shareHeler] currentAddress]
 
 #define KChangeDomainWayNotice       @"ChangeDomainWayNotice"
 #define KChangeIpWayNotice           @"ChangeIpWayNotice"
 #define KCurrentAddressChangeNotice  @"CurrentAddressChangeNotice" //当前ip改变通知
 #define KNewAddressNotice            @"NewAddressNotice"      //新增ip通知
 
-
-
-
 typedef NSMutableArray<IpModel *> * (^ReulstBlock)(void);
 
-@interface IpManagerHelper : NSObject
+
+@interface HostManagerHelper : NSObject
+
 
 + (instancetype)shareHeler;
 
@@ -45,9 +43,6 @@ typedef NSMutableArray<IpModel *> * (^ReulstBlock)(void);
 
 - (void)showManagerController;
 
-
-
-
-
 @end
+
 

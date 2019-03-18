@@ -9,7 +9,7 @@
 #import "AddViewController.h"
 #import "AddDomainViewController.h"
 #import "AddIpViewController.h"
-#import "IpManagerHelper.h"
+#import "HostManagerHelper.h"
 
 @interface AddViewController ()
 {

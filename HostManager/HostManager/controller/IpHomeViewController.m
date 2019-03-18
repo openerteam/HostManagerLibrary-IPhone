@@ -7,7 +7,7 @@
 //
 
 #import "IpHomeViewController.h"
-#import "IpManagerHelper.h"
+#import "HostManagerHelper.h"
 #import "IpHostCell.h"
 #import "AddViewController.h"
 #import "PhoneDetailViewController.h"
@@ -159,7 +159,7 @@
 
 - (void)currentAddressChangeNotice{
     
-    IpModel *model = [IpManagerHelper shareHeler].currentItem;
+    IpModel *model = [HostManagerHelper shareHeler].currentItem;
     
     if(model){
         
@@ -210,7 +210,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return [IpManagerHelper shareHeler].readSaveIpArray.count;
+    return [HostManagerHelper shareHeler].readSaveIpArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -222,7 +222,7 @@
     
     IpHostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IpHostCell"];
     
-    [cell setIpData:[IpManagerHelper shareHeler].readSaveIpArray[indexPath.row]];
+    [cell setIpData:[HostManagerHelper shareHeler].readSaveIpArray[indexPath.row]];
     
     return cell;
 }
@@ -232,15 +232,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    IpModel *item = [IpManagerHelper shareHeler].readSaveIpArray[indexPath.row];
-    [[IpManagerHelper shareHeler] changeCurrentAddress:item];
+    IpModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
+    [[HostManagerHelper shareHeler] changeCurrentAddress:item];
     [tableView reloadData];
     [self exitBtnAction];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     //第二组可以左滑删除
-    IpModel *item = [IpManagerHelper shareHeler].readSaveIpArray[indexPath.row];
+    IpModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
     return !item.isSelected;
 }
 
@@ -251,8 +251,8 @@
 
 // 进入编辑模式，按下出现的编辑按钮后,进行删除操作
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    IpModel *item = [IpManagerHelper shareHeler].readSaveIpArray[indexPath.row];
-    [[IpManagerHelper shareHeler] deleteItem:item];
+    IpModel *item = [HostManagerHelper shareHeler].readSaveIpArray[indexPath.row];
+    [[HostManagerHelper shareHeler] deleteItem:item];
     
     [tableView beginUpdates];
     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];

@@ -1,34 +1,31 @@
 //
-//  IpManagerHelper.m
-//  IpManager
+//  HostManagerHelper.m
+//  HostManager
 //
-//  Created by North on 2019/3/12.
+//  Created by North on 2019/3/18.
 //  Copyright © 2019 North. All rights reserved.
 //
 
-#import "IpManagerHelper.h"
+#import "HostManagerHelper.h"
 #import "IpHomeViewController.h"
-#import "IpModel.h"
 
-
-@interface IpManagerHelper ()
+@interface HostManagerHelper ()
 {
     
     
     NSMutableArray *ipArray;
     IpModel *currentItem;
 }
-
 @end
 
-@implementation IpManagerHelper
+@implementation HostManagerHelper
 
 + (instancetype)shareHeler{
     
-    static IpManagerHelper *helper = nil;
+    static HostManagerHelper *helper = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        helper = [[IpManagerHelper alloc]init];
+        helper = [[HostManagerHelper alloc]init];
         [helper setUp];
     });
     
@@ -71,7 +68,7 @@
         if(currentItem.host.length>0) return [NSString stringWithFormat:@"http://%@:%@",currentItem.ip,currentItem.host];
         else return [NSString stringWithFormat:@"http://%@",currentItem.ip];
     }
-
+    
     return nil;
 }
 
@@ -140,18 +137,16 @@
         [array addObject:[item transformDictionary]];
     }
     [array writeToFile:[self savePath] atomically:YES];
-
+    
 }
 - (void)showManagerController{
     
     
     IpHomeViewController *controller = [[IpHomeViewController alloc]init];
-        UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:controller];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:controller];
     
-     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navController animated:YES completion:nil];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navController animated:YES completion:nil];
     
 }
-
-
 
 @end

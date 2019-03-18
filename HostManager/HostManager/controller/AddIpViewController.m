@@ -7,7 +7,7 @@
 //
 
 #import "AddIpViewController.h"
-#import "IpManagerHelper.h"
+#import "HostManagerHelper.h"
 #import "IpModel.h"
 @interface AddIpViewController ()<UITextFieldDelegate>
 
@@ -224,7 +224,7 @@
     
     IpModel *model = [[IpModel alloc] initWithName:self.nameTextFiled.text.length>0?self.nameTextFiled.text:@"未命名服务器" ip:ip host:self.hostTextFiled.text];
     
-    [[IpManagerHelper shareHeler] saveNewItem:model];
+    [[HostManagerHelper shareHeler] saveNewItem:model];
     
     [self.navigationController popViewControllerAnimated:YES];
     

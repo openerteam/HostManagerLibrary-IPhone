@@ -11,7 +11,13 @@ pod 'HostMananger'
 --------------------
 ### 使用说明
 
-设置默认地址列表
+设置默认地址列表    
+导入头文件
+````
+#import <HostManagerHelper.h>
+````
+
+
 
 ````
 [[HostManagerHelper shareHeler] setDefalutAddress:^NSMutableArray<AddressModel *> *{

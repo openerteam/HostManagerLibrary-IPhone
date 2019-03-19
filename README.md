@@ -24,7 +24,7 @@ pod 'HostMananger'
         
         NSMutableArray *array = @[].mutableCopy;
         {
-            AddressModel *model = [[AddressModel alloc] initWithName:@"百度" ip:@"www.baidu.com" host:nil];
+            AddressModel *model = [[AddressModel alloc] initWithName:@"百度" ip:@"www.baidu.com" host:nil];//注意添加和代码设置前面不要http;获取的会帮你加上 因为ping的失手前面没有http
             model.isSelected = YES;// 默认地址，只能设置一个
             [array addObject:model];
             

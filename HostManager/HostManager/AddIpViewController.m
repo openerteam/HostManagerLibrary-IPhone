@@ -219,7 +219,7 @@
     
     [self.view endEditing:YES];
     
-    NSString *ip = [NSString stringWithFormat:@"%@.%@.%@.%@:%@",self.inputTextFiled1.text,self.inputTextFiled2.text,self.inputTextFiled3.text,self.inputTextFiled4.text,self.hostTextFiled.text];
+    NSString *ip = [NSString stringWithFormat:@"%@.%@.%@.%@",self.inputTextFiled1.text,self.inputTextFiled2.text,self.inputTextFiled3.text,self.inputTextFile];
     
     
     AddressModel *model = [[AddressModel alloc] initWithName:self.nameTextFiled.text.length>0?self.nameTextFiled.text:@"未命名服务器" ip:ip host:self.hostTextFiled.text];

@@ -27,6 +27,7 @@
     dispatch_once(&onceToken, ^{
         helper = [[HostManagerHelper alloc]init];
         [helper setUp];
+        [helper setUpNotice];
     });
     
     return helper;
@@ -44,6 +45,32 @@
             if(model.isSelected) currentItem = model;
             [ipArray addObject:model];
         }
+    }
+}
+
+- (void)setUpNotice{
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidEnterBackgroundNotification) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillEnterForegroundNotification) name:UIApplicationWillEnterForegroundNotification object:nil];
+    
+    
+}
+
+- (void)appDidEnterBackgroundNotification{
+    
+    for (AddressModel *item in ipArray) {
+        
+        [item.pingTester stopPing];
+    }
+    
+}
+
+- (void)appWillEnterForegroundNotification{
+    
+    for (AddressModel *item in ipArray) {
+        
+        [item.pingTester startPing];
     }
 }
 

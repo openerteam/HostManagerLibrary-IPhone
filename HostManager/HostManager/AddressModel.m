@@ -22,7 +22,6 @@
         
         if(self.ip.length >0){
             
-            
             self.pingTester = [[WHPingTester alloc] initWithHostName:self.ip];
             self.pingTester.delegate = self;
             [self.pingTester startPing];

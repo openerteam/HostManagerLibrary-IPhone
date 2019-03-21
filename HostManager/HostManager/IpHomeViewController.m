@@ -12,7 +12,6 @@
 #import "AddViewController.h"
 #import "PhoneDetailViewController.h"
 
-
 @interface IpHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (retain ,nonatomic) UITableView *tableView;
@@ -32,13 +31,6 @@
 @end
 
 @implementation IpHomeViewController
-
-//- (void)viewWillAppear:(BOOL)animated{
-//    [super viewWillAppear:animated];
-//
-//    [self initData];
-//
-//}
 
 
 - (void)viewDidLoad {

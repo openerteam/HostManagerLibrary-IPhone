@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
  s.description  = <<-DESC
-                   一个可以修改网络连接地址的工具类
+ 一个可以修改网络连接地址的工具类
                    DESC
 
   s.homepage     = "https://github.com/openerteam/HostManagerLibrary-IPhone"

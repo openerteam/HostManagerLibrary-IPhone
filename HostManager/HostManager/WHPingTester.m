@@ -34,7 +34,7 @@
 }
 
 - (void) startPing
-{
+{   
     [self.simplePing start];
 }
 
